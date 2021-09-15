@@ -1,7 +1,7 @@
 :root {
   --primario: #000;
   --blanco: #fff;
-  --gris: #696969;
+  --gris: #1f1f23;
   --rojo: #a52a2a;
   --fuentePrincipal: "Staatliches", cursive;
 }
@@ -53,4 +53,27 @@ h2 {
 }
 h3 {
   font-size: 2.4rem;
+}
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  margin: 3rem 0;
+}
+/* Navegación */
+
+.navegacion {
+  background-color: var(--gris);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navegacion__enlace {
+  color: var(--blanco);
+  font-family: var(--fuentePrincipal);
+  font-size: 3rem;
 }
