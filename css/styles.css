@@ -77,3 +77,7 @@ h3 {
   font-family: var(--fuentePrincipal);
   font-size: 3rem;
 }
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+  color: var(--rojo);
+}
