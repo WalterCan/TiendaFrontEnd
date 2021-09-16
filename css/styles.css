@@ -100,14 +100,39 @@ h3 {
   font-size: 2.2rem;
 }
 /* -- */
+/* Grid */
+/* Posicionamos los productos con grid en 2 y tres columnas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ---- */
 /* Productos */
 .producto {
+  background-color: var(--gris);
+  padding: 1rem;
 }
 .producto__imagen {
-}
-.producto__informacion {
+  width: 100%;
 }
 .producto__texto {
+  font-size: 4rem;
 }
-.producto__precios {
+.producto__precio {
+  font-size: 2.8rem;
+  color: var(--rojo);
 }
+.producto__texto,
+.producto__precio {
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+/* --- */
